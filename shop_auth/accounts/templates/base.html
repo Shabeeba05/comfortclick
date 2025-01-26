@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfort Click</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <a href="home.html">"<img src="{% static 'images/white_logo.png' %}" width="500px" height="100px" class="logo" alt="Home">"</a>
+        <nav class="nvb">
+            <ul class="nvbl">
+            </ul>
+        </nav>
+        <div class="mobile-nav-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+    </div>
+{% block content %}
+
+{% endblock %}
+<div id="footer">
+    <div>
+        <div class="connect">
+            <a href="" class="instagram"></a>
+            <a href="" class="whatsapp"></a>
+        </div>
+        <p>&copy; 2023 AJAS CodinG_CluB. All Rights Reserved.</p>
+    </div>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="{% static 'js/mobile.js' %}"></script>
+</body>
+</html>

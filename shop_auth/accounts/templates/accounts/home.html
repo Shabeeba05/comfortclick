@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<centre>
+    <div  class="dashboard-container" style="font-size: x-large;background-color: beige;">
+    <div class="product-section">
+        <h2 class="section-header" >Add Product</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                
+                <button class="btn">Basic Bra</button>
+            </div>
+            <div class="product-item">
+                
+                <button class="btn">Panty</button>
+            </div>
+            <div class="product-item">
+                
+                <button class="btn">Petticoat</button>
+            </div>
+            <div class="product-item">
+                
+                <button class="btn">Sports Bra</button>
+            </div>
+        </div>
+    </div>
+</div >
+<button class="btn" style="margin-top: 15px;background-color: beige;">+ Add New Product</button><br><br>
+<div class="product-section" style="font-size: x-large;background-color: beige;border: 1px;;">
+    <h2 class="section-header">View Product</h2><br>
+    <table class="product-table" border="1">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Brand</th>
+                <th>Size</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Basic Bra</td>
+                <td>V Star</td>
+                <td>S, M, L, XL</td>
+                <td>₹499</td>
+            </tr>
+            <tr>
+                <td>Petticoat</td>
+                <td>Clovia</td>
+                <td>S, M, L</td>
+                <td>₹599</td>
+            </tr>
+            <tr>
+                <td>Panty</td>
+                <td>Zivema</td>
+                <td>M, L</td>
+                <td>₹249</td>
+            </tr>
+            <tr>
+                <td>Sports Bra</td>
+                <td>M&S</td>
+                <td>S, M, L</td>
+                <td>₹699</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
+</centre>
+{% endblock %}
